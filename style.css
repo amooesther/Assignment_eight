@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: ubuntu;
+}
+.container{
+    display: flex;
+    gap: 20px;    
+    width: 750px;
+    height: 80vh;   
+    margin: 50px auto;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    
+    
+}
+
+.infoLeft{
+    width: 30%;   
+    background: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    padding: 15px;
+    
+    
+    
+}
+.steps{
+    display: flex;
+    flex-direction: column;
+   padding: 0;
+   
+    }
+   
+.step{
+    display: flex;
+    gap: 20px; 
+    }
+   
+.circle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bee1ff;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: 500;
+    
+}
+.one {
+    background-color: #bee1ff;
+    color: #454444;
+}
+
+.step p:first-child{
+    color: #bebebe;
+    font-size: 0.7em;
+}
+.step p:last-child{
+    color: #fff;
+    font-size: 0.7em;
+}
+.infoRight{   
+    padding: 20px;
+    display: none;
+    
+}
+.infoRight form{
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;
+   
+   
+}
+.infoRight h2 {
+    color: #032259;
+    font-size: 1.3em;
+}
+.infoRight p{
+    color: #a5a5aa;
+    font-size: 0.8em;
+}
+.infoRight form label{
+    color: #032259;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.infoRight form input{
+    outline: none;
+    border: 1px solid #c2c2c4;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+.infoRight form ::placeholder{
+    color: #a5a5aa;
+    font-weight: 500;
+    font-size: 0.8em;
+   
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.btn span{
+    color: #a5a5aa;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0;
+}
+.buttons{
+    background-color: #032259;
+    color: white;
+    font-size: 1em;
+    width: 100px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 90px;
+    cursor: pointer;
+    text-align: center;
+      
+ }.plan{
+    display: none;
+ }
+  .plan h2{
+    color: #032259;
+    font-size: 1.3em;
+}
+.plan p{
+    color: #a5a5aa;
+    font-size: 0.8em;
+}
+
+.plans{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+.plans img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.selectPlanOne{
+    display: flex;
+    flex-direction: column;     
+    width: 80px;
+    height: auto;
+    border: 1px solid #002565;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f9fe;
+    
+}
+.selectPlanTwo{
+    display: flex;
+    flex-direction: column;     
+    width: 80px;
+    height: auto;
+    border: 1px solid rgb(231, 231, 232);
+    border-radius: 8px;
+    padding: 20px;
+    
+}
+.plans p{
+    color: #002565;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0;
+}
+.plans span{
+    color: #bebebe;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin: 0;
+}
+.monthly{
+    display: flex;
+    background-color: #f8f9fe;
+    gap: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.monthly p:first-child{
+    color: #032259;
+    font-weight: 500;
+}
+
+
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+  }
+  
+ 
+  .toggle-input {
+    display: none;
+  }
+  
+  
+  .toggle-label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #032259;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+  }
+  
+  
+  .toggle-input:checked + .toggle-label {
+    background-color: #032259;
+  }
+  
+  .toggle-input:checked + .toggle-label::after {
+    left: calc(100% - 25px);
+  }
+  .addOnWrapper{
+    width: 50%;
+    display: none;
+  }
+  .addOnContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+  .addOnContainer h2{
+    color: #032259;
+    font-size: 1.3em;
+}
+.addOnContainer p{
+    color: #a5a5aa;
+    font-size: 0.8em;
+}
+.checked{
+    display: flex;
+    gap: 40px;   
+    background-color: #f8f9fe;   
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #032259;
+}
+.checks{
+    background-color: #fff;
+}
+.check p{
+    color: #002565;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0;
+}
+.check span{
+    color: #a5a5aa;
+    font-size: 0.8em;
+    margin: 0;
+}
+.span{
+    display: flex;
+    
+}
+  .mo{
+    color: #473eff;
+    font-size: 0.6em;   
+    padding-top: 10px;
+    text-align: center;
+    
+     }
+     .summaryWrapper{
+        display: none;
+     }
+     .summary h2{
+        color: #032259;
+        font-size: 1.3em;
+     }
+     .summary p{
+        color: #a5a5aa;
+        font-size: 0.8em;
+     }
+     .finishing{
+        background-color: #f8f9fe;
+        padding: 15px;
+        border-radius: 10px;
+     }
+     .arcade{
+        display: flex;
+        gap: 200px;        
+        width: 100%;
+        margin: 0;
+        
+     }
+     .arcade p{
+        margin: 0;
+        width: 120px;
+        color: #032259;
+     }
+     .arcade span{
+        margin: 0;
+        color: #a5a5aa;
+        font-size: 0.7em;
+        text-decoration: underline;
+     }
+     .summaryPrice{
+        color: #032259 !important;
+        font-weight: 500;
+     }
+     .line{
+        border-bottom:1px solid #c2c2c4;
+        margin-top: 20px;
+        
+     }
+     .online{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+     }
+     .online p{
+        margin: 0;
+     }
+     .online span{
+        color: #032259;
+        font-weight: 500;
+        font-size: 0.7em;
+     }
+     .yearly{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+     }
+     .yearly p{
+        margin: 0;
+     }
+     .yearly span{
+        font-size: 1em;
+        color: #473eff;
+        font-weight: 500;
+     }
+     .bttn{
+        background-color: #473eff;
+        width: 80px;
+        font-size: 0.8em;
+        padding: 8px;
+        margin-top: 100px;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+     }
+     .thankYouWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     }
+     .thankYou{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+        
+     }
+     .thankYou img{
+        width: 40px;
+        height: 40px;
+     }
+.thankYou p{
+    font-size: 0.8em;
+    width: 350px;
+    color: #a5a5aa;
+    margin: 0;
+}
+.thankYou h2{
+    color: #032259;
+    font-size: 1.3em;
+}
+.go-back{
+    color: #a5a5aa;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+#step1:target ~ .infoRight,
+#step2:target ~ .planWrapper,
+#step3:target ~ .addOnWrapper,
+#step4:target ~ .summaryWrapper,
+#thankYou:target ~ .thankYouWrapper {
+    display: block;
+}
+#step1 {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .infoLeft {
+        width: 90%;
+        height: 150px; 
+        background: url(./assets/images/bg-sidebar-mobile.svg);
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    
+    .info-steps{
+        display: flex;
+        justify-content: space-around;
+    }
+      .steps{
+        display: none;
+    }
+  
+    .infoRight {
+        width: 85%;
+        height: auto;
+        display: block;
+        padding: 5px;
+        position: absolute;
+        top: 200px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+        border-radius: 10px; 
+        background-color: white; 
+    }
+    
+      
+    
+  
+    .circle {
+      width: 25px;
+      height: 25px;
+      font-size: 0.6em;
+    }
+  
+    .plans {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    
+    .selectPlanOne, .selectPlanTwo {
+        width: 80%;
+        padding: 15px;
+    }
+    
+  
+    .monthly {
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    
+  
+    .buttons {
+      margin-top: 50px;
+      width: 80px;
+      padding: 8px;
+    }
+  
+    .addOnWrapper,
+    .addOnContainer,
+    .summaryWrapper,
+    .thankYouWrapper {
+      width: 100%;
+    }
+  
+    .arcade {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .arcade p,
+    .arcade span {
+      width: 90%;
+    }
+  
+    .online,
+    .yearly {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
